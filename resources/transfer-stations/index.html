@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Stations &amp; Convenience Centers in Hawaii | RemoveJunkHawaii</title>
+    <meta name="description" content="Complete directory of Hawaii transfer stations and convenience centers. Find drop-off locations, hours, accepted materials, and fees on Oahu, Maui, Kauai, and Hawaii Island.">
+    <link rel="canonical" href="https://removejunkhawaii.com/resources/transfer-stations/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Transfer Stations &amp; Convenience Centers in Hawaii">
+    <meta property="og:description" content="Find every transfer station and convenience center across the Hawaiian islands. Hours, locations, accepted materials, and drop-off rules.">
+    <meta property="og:url" content="https://removejunkhawaii.com/resources/transfer-stations/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://removejunkhawaii.com/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://removejunkhawaii.com/resources/"},{"@type":"ListItem","position":3,"name":"Transfer Stations"}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What can I drop off at a Hawaii transfer station?","acceptedAnswer":{"@type":"Answer","text":"Most Hawaii transfer stations accept household trash, bulky items (furniture, mattresses, appliances), green waste (yard trimmings, palm fronds), and recyclables (cardboard, glass, aluminum, plastics). Some stations also accept scrap metal, tires, and used motor oil. Hazardous materials such as paint, pesticides, propane tanks, and batteries are generally not accepted at transfer stations and must go through county-sponsored hazmat collection events."}},{"@type":"Question","name":"Are there fees to use Hawaii transfer stations?","acceptedAnswer":{"@type":"Answer","text":"Fees vary by county. On Oahu, the City and County of Honolulu transfer stations and convenience centers are free for residential self-haulers with a valid Hawaii ID. Maui County charges fees at the Central Maui Landfill based on weight. Hawaii County transfer stations are generally free for household quantities. Kauai County's Lihue Transfer Station accepts residential waste at no charge. Commercial haulers are charged tipping fees at all locations."}},{"@type":"Question","name":"What are the hours for transfer stations in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"Hours vary by location and island. Oahu convenience centers typically operate 7 AM to 6 PM daily, while transfer stations run Monday through Friday 10 AM to 6 PM and Saturdays 7 AM to 6 PM. Hawaii Island stations generally run 6 AM to 6 PM Monday through Saturday. Maui's Central Maui Landfill operates 6 AM to 3 PM Monday through Saturday. Always check individual station hours before visiting, as holiday schedules may differ."}},{"@type":"Question","name":"Do I need an appointment to use a transfer station?","acceptedAnswer":{"@type":"Answer","text":"No appointment is needed for residential drop-offs at any Hawaii transfer station or convenience center. Simply drive up during operating hours with your load. Some locations may require a valid Hawaii driver's license or state ID to confirm residency. During peak times — especially Saturday mornings — expect wait times of 15 to 30 minutes at popular stations like Kapaa and Keehi on Oahu."}},{"@type":"Question","name":"What items are NOT accepted at Hawaii transfer stations?","acceptedAnswer":{"@type":"Answer","text":"Transfer stations in Hawaii generally do not accept hazardous waste (paint, solvents, pesticides, pool chemicals), medical waste, asbestos-containing materials, explosives or ammunition, radioactive materials, or large quantities of liquid waste. Some stations also refuse tires, car batteries, and e-waste — these items often have dedicated drop-off programs through your county. Check with your local county environmental services office for proper disposal of restricted items."}}]}
+    </script>
+    <style>
+        .filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;justify-content:center}
+        .filter-btn{padding:10px 22px;border-radius:50px;font-size:.9rem;font-weight:600;font-family:var(--font-heading);border:2px solid var(--color-slate-200);background:var(--color-white);color:var(--color-slate-600);cursor:pointer;transition:all var(--transition)}
+        .filter-btn:hover{border-color:var(--color-ocean-light);color:var(--color-ocean)}
+        .filter-btn.active{background:var(--color-ocean);color:var(--color-white);border-color:var(--color-ocean)}
+        .island-section{margin-bottom:48px}
+        .island-section-title{font-family:var(--font-heading);font-size:1.4rem;font-weight:800;color:var(--color-slate-900);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+        .island-section-title .island-count{font-size:.82rem;font-weight:600;color:var(--color-ocean-light);background:var(--color-ocean-lighter);padding:4px 12px;border-radius:50px}
+        .island-section-sub{font-size:.9rem;color:var(--color-slate-500);margin-bottom:20px}
+        .station-card{background:var(--color-white);border:1px solid var(--color-slate-200);border-radius:var(--radius-lg);padding:24px;transition:all var(--transition)}
+        .station-card:hover{border-color:var(--color-ocean-light);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+        .station-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+        .station-card-name{font-family:var(--font-heading);font-size:1.05rem;font-weight:700;color:var(--color-slate-900);line-height:1.3}
+        .station-card-rating{display:flex;align-items:center;gap:4px;flex-shrink:0}
+        .station-card-rating .stars{display:flex;gap:1px}
+        .station-card-rating .stars svg{width:16px;height:16px}
+        .station-card-rating .rating-text{font-size:.82rem;font-weight:600;color:var(--color-slate-700);margin-left:4px;white-space:nowrap}
+        .station-card-meta{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+        .station-card-meta-row{display:flex;align-items:flex-start;gap:8px;font-size:.88rem;color:var(--color-slate-600)}
+        .station-card-meta-row svg{width:16px;height:16px;flex-shrink:0;color:var(--color-slate-400);margin-top:2px}
+        .station-card-meta-row a{color:var(--color-ocean-light);font-weight:500}
+        .station-card-meta-row a:hover{color:var(--color-ocean)}
+        .station-card-desc{font-size:.85rem;color:var(--color-slate-500);line-height:1.6;padding-top:14px;border-top:1px solid var(--color-slate-100)}
+        .station-card-hours{font-weight:600;color:var(--color-slate-700)}
+        .hidden{display:none!important}
+        @media(max-width:768px){
+            .filter-btn{padding:8px 16px;font-size:.82rem}
+            .station-card{padding:20px}
+            .station-card-header{flex-direction:column;gap:8px}
+        }
+    </style>
+</head>
+<body>
+    <header class="header"><div class="container header-inner"><a href="/" class="logo"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/><path d="M10 11v4"/><path d="M14 11v4"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><nav class="nav-desktop"><a href="/companies/">Companies</a><a href="/islands/">Islands</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/" class="btn-nav-cta">Get Quotes</a></nav><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.getElementById('mobileNav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div><nav class="nav-mobile" id="mobileNav"><a href="/companies/">Browse Companies</a><a href="/islands/">Browse by Island</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/tools/">Tools</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/">Get Free Quotes</a></nav></header>
+
+    <div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/resources/">Resources</a><span>/</span>Transfer Stations</nav></div>
+
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Transfer Stations &amp; Convenience Centers</h1>
+            <p>Every public drop-off location across the Hawaiian islands. Find hours, addresses, and what each station accepts so you can dispose of waste properly.</p>
+            <div class="page-hero-stats">
+                <div><div class="page-hero-stat-num">20</div><div class="page-hero-stat-label">Stations Listed</div></div>
+                <div><div class="page-hero-stat-num">4</div><div class="page-hero-stat-label">Islands Covered</div></div>
+                <div><div class="page-hero-stat-num">Free</div><div class="page-hero-stat-label">Residential Drop-Off</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-block">
+                <h2>What Are Transfer Stations?</h2>
+                <p>Transfer stations and convenience centers are county-operated facilities where Hawaii residents can drop off household waste, bulky items, green waste, and recyclables. These sites serve as intermediate collection points — waste is consolidated here before being transported to a landfill or processing facility. For residents who miss curbside pickup, need to dispose of oversized items, or simply have more waste than their regular collection can handle, transfer stations are the most affordable and accessible option.</p>
+                <p>Each Hawaiian county operates its own network of stations with slightly different rules and accepted materials. In general, most transfer stations across all islands accept the following:</p>
+                <ul>
+                    <li><strong>Household trash</strong> — bagged residential garbage, general clutter</li>
+                    <li><strong>Bulky items</strong> — furniture, mattresses, large appliances (refrigerators, washers, dryers)</li>
+                    <li><strong>Green waste</strong> — yard trimmings, palm fronds, tree branches, grass clippings</li>
+                    <li><strong>Recyclables</strong> — cardboard, glass bottles, aluminum cans, plastics #1 and #2</li>
+                    <li><strong>Scrap metal</strong> — accepted at select locations; check before hauling</li>
+                </ul>
+                <p>Hazardous materials — including paint, solvents, pesticides, propane tanks, and automotive batteries — are not accepted at transfer stations. Each county holds periodic household hazardous waste collection events for these items. Visit your county's environmental services website for upcoming dates.</p>
+                <p>Residential self-haulers on Oahu, Kauai, and Hawaii Island can use transfer stations at no charge with a valid Hawaii ID. Maui County charges by weight at the Central Maui Landfill. Commercial haulers pay tipping fees at all locations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-label">Directory</div>
+                <h2 class="section-title">All Transfer Stations &amp; Convenience Centers</h2>
+                <p class="section-sub">Browse by island or view all locations across Hawaii.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterIsland('all')">All Islands</button>
+                <button class="filter-btn" onclick="filterIsland('oahu')">Oahu</button>
+                <button class="filter-btn" onclick="filterIsland('maui')">Maui</button>
+                <button class="filter-btn" onclick="filterIsland('kauai')">Kauai</button>
+                <button class="filter-btn" onclick="filterIsland('hawaii-island')">Hawaii Island</button>
+            </div>
+
+            <!-- OAHU -->
+            <div class="island-section" data-island="oahu">
+                <div class="island-section-title">Oahu <span class="island-count">7 stations</span></div>
+                <div class="island-section-sub">City and County of Honolulu</div>
+                <div class="grid-2">
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Keehi Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.7 (64)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 606 Middle St, Honolulu, HI 96819</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18087684884">(808) 768-4884</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">Mon-Fri 10AM-6PM, Sat 7AM-6PM</span></div>
+                        </div>
+                        <div class="station-card-desc">Major Honolulu transfer station accepting household waste, bulky items, green waste, and recyclables. Free for Oahu residents with valid Hawaii ID.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Kapaa Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.6 (99)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 100 Kapaa Quarry Rd, Kailua, HI 96734</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18087684248">(808) 768-4248</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">Mon-Fri 10AM-6PM, Sat-Sun 7AM-6PM</span></div>
+                        </div>
+                        <div class="station-card-desc">Windward Oahu transfer station near Kailua. Accepts household waste, bulky items, appliances, green waste, and recyclables. One of the busiest stations on the island.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Kapolei Convenience Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.5 (18)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 91-184 Kaomi Loop, Kapolei, HI 96707</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18082602801">(808) 260-2801</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">West Oahu convenience center serving Kapolei, Ko Olina, and surrounding communities. Accepts household waste, green waste, bulky items, and recyclables seven days a week.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Ewa Refuse Convenience Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.9 (75)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 91-1000 Geiger Rd, Ewa Beach, HI 96706</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18082262996">(808) 226-2996</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">Ewa Beach convenience center accepting household refuse, bulky items, green waste, and recyclables. Open seven days a week for residential drop-offs.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Waipahu Convenience Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.9 (89)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 94-071 Waipahu Depot St, Waipahu, HI 96797</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18086768878">(808) 676-8878</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">Central Oahu convenience center serving Waipahu and Pearl City. Accepts household waste, bulky items, green waste, and standard recyclables.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Wahiawa Convenience Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.7 (46)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 71-129 Wilikina Dr, Wahiawa, HI 96786</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18086213648">(808) 621-3648</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">North-central Oahu convenience center serving Wahiawa, Mililani, and Schofield-area residents. Household waste, bulky items, green waste, and recyclables accepted.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Honolulu Collection Yard</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.8 (4)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 626 Middle St, Honolulu, HI 96819</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">Contact city for hours</span></div>
+                        </div>
+                        <div class="station-card-desc">City collection yard adjacent to Keehi Transfer Station on Middle Street. Used for bulky item collection and green waste drop-off for Honolulu residents.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MAUI -->
+            <div class="island-section" data-island="maui">
+                <div class="island-section-title">Maui <span class="island-count">2 stations</span></div>
+                <div class="island-section-sub">Maui County</div>
+                <div class="grid-2">
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Central Maui Landfill Refuse and Recycling Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.3 (87)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Pulehu Rd &amp; Hansen Rd, Puunene, HI 96784</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18082706153">(808) 270-6153</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-3PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">Maui's primary refuse and recycling facility. Accepts household waste, bulky items, green waste, recyclables, scrap metal, and tires. Fees charged by weight for all users.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Olowalu Recycling &amp; Refuse Convenience Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.3 (12)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 361 Luawai St, Lahaina, HI 96761</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">8AM-2:30PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">West Maui convenience center serving Lahaina and surrounding areas. Accepts household refuse, recyclables, and green waste. Compact facility with limited capacity.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- KAUAI -->
+            <div class="island-section" data-island="kauai">
+                <div class="island-section-title">Kauai <span class="island-count">1 station</span></div>
+                <div class="island-section-sub">Kauai County</div>
+                <div class="grid-2">
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Lihue Refuse Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.8 (14)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 3450 Ahukini Rd, Lihue, HI 96766</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18082124683">(808) 212-4683</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7:15AM-3:15PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">Kauai's main transfer station near Lihue Airport. Accepts household waste, bulky items, green waste, recyclables, and scrap metal. Free for Kauai residents with valid ID.</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- HAWAII ISLAND -->
+            <div class="island-section" data-island="hawaii-island">
+                <div class="island-section-title">Hawaii Island <span class="island-count">9 stations</span></div>
+                <div class="island-section-sub">Hawaii County</div>
+                <div class="grid-2">
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Hilo Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.3 (44)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Hilo, HI 96720</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">East Hawaii's primary transfer station serving the Hilo area. Accepts household waste, bulky items, green waste, and recyclables. Free for Hawaii County residents.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Kealakehe Transfer Station and Recycling Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.1 (66)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 74-598 Hale Makai Pl, Kailua-Kona, HI 96740</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18089618339">(808) 961-8339</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">West Hawaii's main transfer station and recycling center in Kailua-Kona. Full-service facility accepting household waste, bulky items, green waste, recyclables, and scrap metal.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Keauhou Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.1 (33)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 79-7074 Mamalahoa Hwy, Holualoa, HI 96725</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">South Kona transfer station off Mamalahoa Highway near Holualoa. Accepts household waste, green waste, and recyclables for Hawaii County residents.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Keei Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.9 (15)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 82-6271 Puuhonua Rd, Captain Cook, HI 96704</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">Tue &amp; Fri 8AM-4PM, Sun 8AM-4PM</span></div>
+                        </div>
+                        <div class="station-card-desc">Limited-hours transfer station near Captain Cook serving the Keei and South Kona area. Accepts household waste, green waste, and recyclables on select days only.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Waiea Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.2 (13)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 87 S Kona Belt Rd, Captain Cook, HI 96704</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">Mon &amp; Thu 6AM-6PM, Sat 6AM-6PM</span></div>
+                        </div>
+                        <div class="station-card-desc">South Kona transfer station open three days a week. Accepts household waste, green waste, and recyclables for Captain Cook and surrounding area residents.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Keaau Rubbish Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.2 (88)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 16-921 Keaau-Pahoa Rd, Keaau, HI 96749</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">Puna district transfer station serving Keaau, Pahoa, and surrounding subdivisions. High-volume facility accepting household waste, bulky items, green waste, and recyclables.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Waimea Transfer Station</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.4 (14)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Waimea, HI 96743</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18089618270">(808) 961-8270</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">North Hawaii transfer station serving the Waimea and Kohala coast communities. Accepts household waste, bulky items, green waste, and recyclables.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">WM - West Hawaii Sanitary Landfill</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">3.5 (21)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 71-1111 Queen Ka'ahumanu Hwy, Waikoloa Village, HI 96738</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+18666767150">(866) 676-7150</a></div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">7AM-4PM Mon-Sat</span></div>
+                        </div>
+                        <div class="station-card-desc">Waste Management-operated sanitary landfill serving Waikoloa and South Kohala. Accepts household waste, construction debris, and bulky items. Tipping fees apply for all users.</div>
+                    </div>
+
+                    <div class="station-card">
+                        <div class="station-card-header">
+                            <div class="station-card-name">Pahoa Recycling Center</div>
+                            <div class="station-card-rating">
+                                <div class="stars"><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                                <span class="rating-text">4.4 (5)</span>
+                            </div>
+                        </div>
+                        <div class="station-card-meta">
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 15-1870 Old Cemetery Rd, Pahoa, HI 96778</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> No phone listed</div>
+                            <div class="station-card-meta-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span class="station-card-hours">6AM-6PM daily</span></div>
+                        </div>
+                        <div class="station-card-desc">Lower Puna recycling center serving Pahoa, Leilani Estates, and surrounding communities. Focused on recyclables with additional acceptance of household waste and green waste.</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered"><div class="section-label">Common Questions</div><h2 class="section-title">Transfer Station FAQ</h2></div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What can I drop off at a Hawaii transfer station?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-a">Most Hawaii transfer stations accept household trash, bulky items (furniture, mattresses, appliances), green waste (yard trimmings, palm fronds), and recyclables (cardboard, glass, aluminum, plastics). Some stations also accept scrap metal, tires, and used motor oil. Hazardous materials such as paint, pesticides, propane tanks, and batteries are generally not accepted and must go through county-sponsored hazmat collection events.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Are there fees to use Hawaii transfer stations?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-a">Fees vary by county. On Oahu, the City and County of Honolulu transfer stations and convenience centers are free for residential self-haulers with a valid Hawaii ID. Maui County charges fees at the Central Maui Landfill based on weight. Hawaii County transfer stations are generally free for household quantities. Kauai County's Lihue Transfer Station accepts residential waste at no charge. Commercial haulers are charged tipping fees at all locations.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What are the hours for transfer stations in Hawaii?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-a">Hours vary by location and island. Oahu convenience centers typically operate 7 AM to 6 PM daily, while transfer stations run Monday through Friday 10 AM to 6 PM and Saturdays 7 AM to 6 PM. Hawaii Island stations generally run 6 AM to 6 PM Monday through Saturday. Maui's Central Maui Landfill operates 6 AM to 3 PM Monday through Saturday. Always check individual station hours before visiting, as holiday schedules may differ.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Do I need an appointment to use a transfer station?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-a">No appointment is needed for residential drop-offs at any Hawaii transfer station or convenience center. Simply drive up during operating hours with your load. Some locations may require a valid Hawaii driver's license or state ID to confirm residency. During peak times — especially Saturday mornings — expect wait times of 15 to 30 minutes at popular stations like Kapaa and Keehi on Oahu.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What items are NOT accepted at Hawaii transfer stations?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="faq-a">Transfer stations in Hawaii generally do not accept hazardous waste (paint, solvents, pesticides, pool chemicals), medical waste, asbestos-containing materials, explosives or ammunition, radioactive materials, or large quantities of liquid waste. Some stations also refuse tires, car batteries, and e-waste — these items often have dedicated drop-off programs through your county. Check with your local county environmental services office for proper disposal of restricted items.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container cta-band-content">
+            <h2>Too Much to Haul Yourself?</h2>
+            <p>Hire a licensed junk removal company to handle the heavy lifting and disposal for you.</p>
+            <div class="cta-buttons">
+                <a href="/companies/" class="btn btn-white btn-lg">Browse Companies</a>
+                <a href="/get-quotes/" class="btn btn-outline-white btn-lg">Get Free Quotes</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo" style="color:var(--color-white)"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><p>Hawaii's most comprehensive junk removal directory.</p></div><div><h4>Islands</h4><ul><li><a href="/islands/oahu/">Oahu</a></li><li><a href="/islands/maui/">Maui</a></li><li><a href="/islands/kauai/">Kauai</a></li><li><a href="/islands/hawaii-island/">Hawaii Island</a></li><li><a href="/islands/molokai/">Molokai</a></li><li><a href="/islands/lanai/">Lanai</a></li></ul></div><div><h4>Services</h4><ul><li><a href="/services/junk-removal/">Junk Removal</a></li><li><a href="/services/furniture-removal/">Furniture Removal</a></li><li><a href="/services/appliance-removal/">Appliance Removal</a></li><li><a href="/services/estate-cleanouts/">Estate Cleanouts</a></li><li><a href="/services/construction-debris-removal/">Construction Debris</a></li><li><a href="/services/commercial-cleanouts/">Commercial Cleanouts</a></li></ul></div><div><h4>Resources</h4><ul><li><a href="/resources/pricing-guides/">Pricing Guides</a></li><li><a href="/tools/cost-calculator/">Cost Calculator</a></li><li><a href="/resources/transfer-stations/">Transfer Stations</a></li><li><a href="/resources/recycling/">Recycling Centers</a></li><li><a href="/resources/donation-centers/">Donation Centers</a></li><li><a href="/blog/">Blog</a></li></ul></div><div><h4>For Providers</h4><ul><li><a href="/add-business/">Add Your Business</a></li><li><a href="/claim/">Claim Listing</a></li><li><a href="/pricing/">Advertising</a></li><li><a href="/pro/">Provider Dashboard</a></li><li><a href="/contact/">Contact Us</a></li><li><a href="/about/">About</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 RemoveJunkHawaii.com. All rights reserved.</span><div class="footer-bottom-links"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a></div></div></div></footer>
+    <div class="mobile-bar"><div class="mobile-bar-inner"><a href="/get-quotes/" class="btn btn-primary">Get Quotes</a><a href="tel:" class="btn btn-accent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a></div></div>
+    <script>
+    function toggleFaq(btn){var a=btn.nextElementSibling;btn.classList.toggle('open');a.classList.toggle('open')}
+    function filterIsland(island){var sections=document.querySelectorAll('.island-section[data-island]');var btns=document.querySelectorAll('.filter-btn');btns.forEach(function(b){b.classList.remove('active')});event.target.classList.add('active');sections.forEach(function(s){if(island==='all'){s.classList.remove('hidden')}else{s.getAttribute('data-island')===island?s.classList.remove('hidden'):s.classList.add('hidden')}})}
+    </script>
+</body>
+</html>

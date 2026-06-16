@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Centers in Hawaii — Drop-Off Locations & Hours | RemoveJunkHawaii</title>
+    <meta name="description" content="Find recycling centers across Hawaii. HI-5 redemption, scrap metal recycling, e-waste disposal, green waste composting, and construction material recycling drop-off locations, hours, and ratings.">
+    <link rel="canonical" href="https://removejunkhawaii.com/resources/recycling/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Recycling Centers in Hawaii — Drop-Off Locations & Hours">
+    <meta property="og:description" content="Directory of recycling centers across all Hawaiian Islands. HI-5 redemption centers, scrap metal facilities, e-waste drop-offs, and more with hours, ratings, and contact info.">
+    <meta property="og:url" content="https://removejunkhawaii.com/resources/recycling/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+        .filter-btn{padding:.5rem 1.25rem;border-radius:100px;border:1.5px solid var(--color-border,#d1d5db);background:var(--color-white,#fff);color:var(--color-text,#374151);font-weight:600;font-size:.875rem;cursor:pointer;transition:all .2s}
+        .filter-btn:hover{border-color:var(--color-primary,#2563eb);color:var(--color-primary,#2563eb)}
+        .filter-btn.active{background:var(--color-primary,#2563eb);color:#fff;border-color:var(--color-primary,#2563eb)}
+        .island-section{margin-bottom:2.5rem}
+        .island-section.hidden{display:none}
+        .island-section-title{font-size:1.5rem;font-weight:800;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--color-border,#e5e7eb)}
+        .island-section-title svg{vertical-align:middle;margin-right:.5rem;color:var(--color-primary,#2563eb)}
+        .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+        @media(max-width:768px){.grid-2{grid-template-columns:1fr}}
+        .rc-card{background:var(--color-white,#fff);border:1.5px solid var(--color-border,#e5e7eb);border-radius:12px;padding:1.5rem;transition:box-shadow .2s,border-color .2s}
+        .rc-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);border-color:var(--color-primary,#2563eb)}
+        .rc-card-name{font-size:1.1rem;font-weight:700;margin:0 0 .5rem;color:var(--color-heading,#111827)}
+        .rc-card-rating{display:flex;align-items:center;gap:.35rem;margin-bottom:.5rem;font-size:.875rem;color:var(--color-muted,#6b7280)}
+        .rc-card-rating svg{flex-shrink:0}
+        .rc-card-meta{display:flex;flex-direction:column;gap:.35rem;font-size:.875rem;color:var(--color-text,#374151)}
+        .rc-card-meta-row{display:flex;align-items:flex-start;gap:.5rem}
+        .rc-card-meta-row svg{flex-shrink:0;margin-top:2px;color:var(--color-muted,#6b7280)}
+        .rc-card-materials{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.75rem}
+        .rc-card-tag{display:inline-block;padding:.2rem .6rem;border-radius:100px;font-size:.75rem;font-weight:600;background:#eff6ff;color:#2563eb}
+        .rc-card-tag.metal{background:#fef3c7;color:#92400e}
+        .rc-card-tag.green{background:#d1fae5;color:#065f46}
+        .rc-card-tag.auto{background:#fce7f3;color:#9d174d}
+        .rc-card-tag.reuse{background:#ede9fe;color:#5b21b6}
+        .rc-card-tag.construction{background:#ffedd5;color:#9a3412}
+        .rc-card-tag.general{background:#f3f4f6;color:#374151}
+        .hero-stats{display:flex;gap:2rem;margin-top:1.25rem;flex-wrap:wrap}
+        .hero-stat{text-align:center}
+        .hero-stat-num{font-size:2rem;font-weight:900;color:var(--color-white,#fff)}
+        .hero-stat-label{font-size:.85rem;opacity:.85}
+        .types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0}
+        @media(max-width:768px){.types-grid{grid-template-columns:repeat(2,1fr)}}
+        .type-card{background:var(--color-white,#fff);border:1.5px solid var(--color-border,#e5e7eb);border-radius:10px;padding:1.25rem;text-align:center}
+        .type-card h3{font-size:1rem;margin:.75rem 0 .25rem;font-weight:700}
+        .type-card p{font-size:.825rem;color:var(--color-muted,#6b7280);margin:0}
+        .type-card svg{color:var(--color-primary,#2563eb)}
+        .faq-list{max-width:800px;margin:0 auto}
+        .faq-item{border:1.5px solid var(--color-border,#e5e7eb);border-radius:10px;margin-bottom:.75rem;overflow:hidden}
+        .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;background:none;border:none;font-size:1rem;font-weight:600;text-align:left;cursor:pointer;color:var(--color-heading,#111827);font-family:inherit}
+        .faq-q svg{flex-shrink:0;transition:transform .2s}
+        .faq-q.open svg{transform:rotate(45deg)}
+        .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding:0 1.25rem}
+        .faq-a.open{max-height:600px;padding:0 1.25rem 1.25rem}
+        .faq-a p{margin:0 0 .75rem;font-size:.95rem;line-height:1.7;color:var(--color-text,#374151)}
+        .faq-a p:last-child{margin-bottom:0}
+    </style>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://removejunkhawaii.com/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://removejunkhawaii.com/resources/"},{"@type":"ListItem","position":3,"name":"Recycling Centers"}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"What is the HI-5 deposit program in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"The HI-5 program is Hawaii's beverage container deposit program. You pay a 5-cent deposit on eligible beverage containers when you buy them, and you get 5 cents back per container when you return them to a certified redemption center. Eligible containers include most glass, plastic, and aluminum beverage containers between 4 oz and 68 oz. Dairy, wine, and spirits containers are not included."}},
+        {"@type":"Question","name":"What types of scrap metal do Hawaii recycling centers accept?","acceptedAnswer":{"@type":"Answer","text":"Most scrap metal facilities in Hawaii accept ferrous metals (steel, iron) and non-ferrous metals (aluminum, copper, brass, stainless steel). Some also accept auto bodies, appliances, and mixed metals. Prices fluctuate based on market rates. Call ahead to confirm current pricing and accepted materials, as policies vary by location."}},
+        {"@type":"Question","name":"How do I dispose of e-waste and electronics in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"Hawaii law prohibits disposing of electronics in the trash. You can bring e-waste to designated drop-off points at transfer stations or recycling centers. Items like TVs, computers, monitors, and printers are accepted. Some retailers also offer take-back programs. For large volumes, consider hiring a junk removal company that specializes in e-waste pickup."}},
+        {"@type":"Question","name":"Can I recycle construction debris in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"Yes. Several facilities accept construction and demolition materials including concrete, asphalt, wood, metal, and drywall. Hawaiian Earth Recycling on Oahu and Hawaii Materials Recycling on Maui specialize in construction material recycling. Fees vary by material type and volume. Clean concrete and asphalt are often accepted for free or at reduced rates since they can be crushed and reused."}},
+        {"@type":"Question","name":"Do recycling centers in Hawaii charge fees?","acceptedAnswer":{"@type":"Answer","text":"It depends on the material and center. HI-5 redemption centers pay you for eligible beverage containers. Scrap metal facilities pay you based on metal type and weight. However, e-waste drop-off, green waste composting, and construction debris recycling may charge tipping fees. Some centers accept certain materials for free. Always call ahead to confirm fees and accepted materials before making a trip."}}
+    ]}
+    </script>
+</head>
+<body>
+    <header class="header"><div class="container header-inner"><a href="/" class="logo"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/><path d="M10 11v4"/><path d="M14 11v4"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><nav class="nav-desktop"><a href="/companies/">Companies</a><a href="/islands/">Islands</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/" class="btn-nav-cta">Get Quotes</a></nav><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.getElementById('mobileNav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div><nav class="nav-mobile" id="mobileNav"><a href="/companies/">Browse Companies</a><a href="/islands/">Browse by Island</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/tools/">Tools</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/">Get Free Quotes</a></nav></header>
+
+    <div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/resources/">Resources</a><span>/</span>Recycling Centers</nav></div>
+
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <h1>Recycling Centers in Hawaii</h1>
+            <p>Find recycling drop-off locations across the Hawaiian Islands. HI-5 redemption centers, scrap metal facilities, green waste composting, construction material recycling, and more.</p>
+            <div class="hero-stats">
+                <div class="hero-stat"><div class="hero-stat-num">16</div><div class="hero-stat-label">Recycling Centers</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">4</div><div class="hero-stat-label">Islands Covered</div></div>
+                <div class="hero-stat"><div class="hero-stat-num">6</div><div class="hero-stat-label">Material Types</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Recycling -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">What You Can Recycle</div>
+                <h2 class="section-title">Types of Recycling in Hawaii</h2>
+                <p class="section-sub">Hawaii recycling centers accept a variety of materials. Here are the most common categories.</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 2h8l2 4H6l2-4z"/><rect x="5" y="6" width="14" height="14" rx="1"/><path d="M9 10v6"/><path d="M15 10v6"/></svg>
+                    <h3>HI-5 Redemption</h3>
+                    <p>Return beverage containers for 5-cent deposit refund</p>
+                </div>
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                    <h3>Scrap Metal</h3>
+                    <p>Ferrous and non-ferrous metals bought by weight</p>
+                </div>
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 9-7 9s-7-4-7-9a7 7 0 0 1 7-7z"/><path d="M12 22v-4"/></svg>
+                    <h3>Green Waste</h3>
+                    <p>Yard waste, palm fronds, and organic composting</p>
+                </div>
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <h3>E-Waste</h3>
+                    <p>TVs, computers, monitors, and electronics</p>
+                </div>
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 6V2"/><path d="M6 18v2"/><path d="M18 18v2"/></svg>
+                    <h3>Construction Materials</h3>
+                    <p>Concrete, asphalt, lumber, drywall</p>
+                </div>
+                <div class="type-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/><polygon points="12 15 17 21 7 21 12 15"/></svg>
+                    <h3>Auto Parts &amp; Reuse</h3>
+                    <p>Used auto parts, salvage, and repurposed items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory -->
+    <section class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Directory</div>
+                <h2 class="section-title">All Recycling Centers</h2>
+                <p class="section-sub">Filter by island to find recycling drop-off locations near you.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterIsland('all')">All Islands</button>
+                <button class="filter-btn" onclick="filterIsland('oahu')">Oahu</button>
+                <button class="filter-btn" onclick="filterIsland('maui')">Maui</button>
+                <button class="filter-btn" onclick="filterIsland('kauai')">Kauai</button>
+                <button class="filter-btn" onclick="filterIsland('hawaii-island')">Hawaii Island</button>
+            </div>
+
+            <!-- OAHU -->
+            <div class="island-section" data-island="oahu">
+                <h3 class="island-section-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>Oahu</h3>
+                <div class="grid-2">
+                    <!-- RRR Recycling -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">RRR Recycling Services Hawaii</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.2 (14 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>91-165 Kalaeloa Blvd, Kapolei, HI 96707</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18086825600">(808) 682-5600</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 9:15 AM - 3 PM, Sat 8 AM - 3:30 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag general">General Recycling</span>
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                        </div>
+                    </div>
+                    <!-- Reynolds Recycling -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Reynolds Recycling Ewa Beach Redemption Center</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>2.6 (39 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>91-919 Fort Weaver Rd, Ewa Beach, HI 96706</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18084872802">(808) 487-2802</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 AM - 12 PM &amp; 1:30 - 5 PM daily</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                        </div>
+                    </div>
+                    <!-- Waipahu Recycling -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Waipahu Recycling LLC</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.3 (94 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>94-037 Waipahu Depot St, Waipahu, HI 96797</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18086776969">(808) 677-6969</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 AM - 4:30 PM daily</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag general">General Recycling</span>
+                        </div>
+                    </div>
+                    <!-- Hawaiian Earth -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Hawaiian Earth Recycling</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.7 (36 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>65-1101 Wilikina Dr, Wahiawa, HI 96786</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18086825895">(808) 682-5895</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Sat 7 AM - 4:30 PM, Sun 8 AM - 12 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag green">Green Waste Composting</span>
+                            <span class="rc-card-tag construction">Construction Recycling</span>
+                        </div>
+                    </div>
+                    <!-- Oahu Used Auto Parts -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Oahu Used Auto Parts and Recycling LLC</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.9 (32 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>94-233 Leonui St Suite 2, Waipahu, HI 96797</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18088534315">(808) 853-4315</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8 AM - 5 PM Mon-Sat</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag auto">Auto Parts Recycling</span>
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAUI -->
+            <div class="island-section" data-island="maui">
+                <h3 class="island-section-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>Maui</h3>
+                <div class="grid-2">
+                    <!-- Hammerhead Metals -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Hammerhead Metals Recycling</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>3.8 (44 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>2000 Maui Veterans Hwy, Puunene, HI 96784</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18082808844">(808) 280-8844</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 7 - 11 AM &amp; 11:45 AM - 3 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Hawaii Materials Recycling -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Hawaii Materials Recycling</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.7 (10 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>E Welakahao Rd, Kihei, HI 96753</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18088566231">(808) 856-6231</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 7:30 AM - 3:30 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag construction">Construction Materials</span>
+                        </div>
+                    </div>
+                    <!-- Olowalu -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Olowalu Residential Recycling &amp; Refuse Center</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.6 (10 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lahaina, HI 96761</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Sat 8 AM - 2:30 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag general">General Recycling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KAUAI -->
+            <div class="island-section" data-island="kauai">
+                <h3 class="island-section-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>Kauai</h3>
+                <div class="grid-2">
+                    <!-- Puhi Metals -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Puhi Metals Recycling Facility (Resource Recovery Solutions)</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.4 (15 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>3951 Puhi Rd, Lihue, HI 96766</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18082456919">(808) 245-6919</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Sat 7:30 AM - 3:30 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HAWAII ISLAND -->
+            <div class="island-section" data-island="hawaii-island">
+                <h3 class="island-section-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>Hawaii Island</h3>
+                <div class="grid-2">
+                    <!-- Atlas Hilo -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Atlas Recycling Center LLC (Hilo)</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.6 (25 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>30 Makaala St A, Hilo, HI 96720</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18089359328">(808) 935-9328</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 8 AM - 5 PM, Sat-Sun 8 AM - 3 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Atlas Kona -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Atlas Recycling Centers LLC (Kona)</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.6 (29 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>74-5600 Alapa St, Kailua-Kona, HI 96740</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18083296868">(808) 329-6868</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 7 AM - 4 PM, Sat-Sun 8 AM - 3 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Atlas Waimea -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Atlas Recycling Center LLC (Waimea)</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.7 (13 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>64-1004 Mamalahoa Hwy, Waimea, HI 96743</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18088856122">(808) 885-6122</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon, Wed, Fri 9 AM - 4 PM, Sat 9 AM - 3 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Mr K's -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Mr K's Recycle &amp; Redemption Center</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.5 (57 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>815 Kinoole St, Hilo, HI 96720</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18089691222">(808) 969-1222</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>8:30 AM - 4:30 PM daily</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag">HI-5 Redemption</span>
+                        </div>
+                    </div>
+                    <!-- Big Island Metal Recycling -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Big Island Metal Recycling</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.0 (4 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>16-275 Mikahala St, Keaau, HI 96749</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18089549172">(808) 954-9172</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 8 AM - 4 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Big Island Scrap Metal -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Big Island Scrap Metal</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.1 (9 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>16-168 Kalara St, Keaau, HI 96749</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+18088544530">(808) 854-4530</a></div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon-Fri 7 AM - 3:30 PM, Sat 7 AM - 3 PM</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag metal">Scrap Metal</span>
+                        </div>
+                    </div>
+                    <!-- Kea'au Reuse Center -->
+                    <div class="rc-card">
+                        <div class="rc-card-name">Kea'au Reuse Center</div>
+                        <div class="rc-card-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d1d5db" stroke="#d1d5db" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            <span>4.0 (9 reviews)</span>
+                        </div>
+                        <div class="rc-card-meta">
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Keaau, HI 96749</div>
+                            <div class="rc-card-meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>9 AM - 5 PM daily</div>
+                        </div>
+                        <div class="rc-card-materials">
+                            <span class="rc-card-tag reuse">Reuse / Repurpose</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Common Questions</div>
+                <h2 class="section-title">Recycling FAQs</h2>
+                <p class="section-sub">Answers to frequently asked questions about recycling in Hawaii.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What is the HI-5 deposit program in Hawaii?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    <div class="faq-a">
+                        <p>The HI-5 program is Hawaii's beverage container deposit program. You pay a 5-cent deposit on eligible beverage containers when you buy them, and you get 5 cents back per container when you return them to a certified redemption center. Eligible containers include most glass, plastic, and aluminum beverage containers between 4 oz and 68 oz. Dairy, wine, and spirits containers are not included.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What types of scrap metal do Hawaii recycling centers accept?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    <div class="faq-a">
+                        <p>Most scrap metal facilities in Hawaii accept ferrous metals (steel, iron) and non-ferrous metals (aluminum, copper, brass, stainless steel). Some also accept auto bodies, appliances, and mixed metals. Prices fluctuate based on market rates. Call ahead to confirm current pricing and accepted materials, as policies vary by location.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How do I dispose of e-waste and electronics in Hawaii?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    <div class="faq-a">
+                        <p>Hawaii law prohibits disposing of electronics in the trash. You can bring e-waste to designated drop-off points at transfer stations or recycling centers. Items like TVs, computers, monitors, and printers are accepted. Some retailers also offer take-back programs. For large volumes, consider hiring a junk removal company that specializes in e-waste pickup.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Can I recycle construction debris in Hawaii?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    <div class="faq-a">
+                        <p>Yes. Several facilities accept construction and demolition materials including concrete, asphalt, wood, metal, and drywall. Hawaiian Earth Recycling on Oahu and Hawaii Materials Recycling on Maui specialize in construction material recycling. Fees vary by material type and volume. Clean concrete and asphalt are often accepted for free or at reduced rates since they can be crushed and reused.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Do recycling centers in Hawaii charge fees?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+                    <div class="faq-a">
+                        <p>It depends on the material and center. HI-5 redemption centers pay you for eligible beverage containers. Scrap metal facilities pay you based on metal type and weight. However, e-waste drop-off, green waste composting, and construction debris recycling may charge tipping fees. Some centers accept certain materials for free. Always call ahead to confirm fees and accepted materials before making a trip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+        <div class="container cta-band-content">
+            <h2>Too Much to Haul Yourself?</h2>
+            <p>Let a junk removal company handle the heavy lifting. Get free quotes from licensed haulers across Hawaii.</p>
+            <div class="cta-buttons">
+                <a href="/companies/" class="btn btn-white btn-lg">Browse Companies</a>
+                <a href="/get-quotes/" class="btn btn-outline-white btn-lg">Get Free Quotes</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="logo" style="color:var(--color-white)"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><p>Hawaii's most comprehensive junk removal directory.</p></div><div><h4>Islands</h4><ul><li><a href="/islands/oahu/">Oahu</a></li><li><a href="/islands/maui/">Maui</a></li><li><a href="/islands/kauai/">Kauai</a></li><li><a href="/islands/hawaii-island/">Hawaii Island</a></li><li><a href="/islands/molokai/">Molokai</a></li><li><a href="/islands/lanai/">Lanai</a></li></ul></div><div><h4>Services</h4><ul><li><a href="/services/junk-removal/">Junk Removal</a></li><li><a href="/services/furniture-removal/">Furniture Removal</a></li><li><a href="/services/appliance-removal/">Appliance Removal</a></li><li><a href="/services/estate-cleanouts/">Estate Cleanouts</a></li><li><a href="/services/construction-debris-removal/">Construction Debris</a></li><li><a href="/services/commercial-cleanouts/">Commercial Cleanouts</a></li></ul></div><div><h4>Resources</h4><ul><li><a href="/resources/pricing-guides/">Pricing Guides</a></li><li><a href="/tools/cost-calculator/">Cost Calculator</a></li><li><a href="/resources/transfer-stations/">Transfer Stations</a></li><li><a href="/resources/recycling/">Recycling Centers</a></li><li><a href="/resources/donation-centers/">Donation Centers</a></li><li><a href="/blog/">Blog</a></li></ul></div><div><h4>For Providers</h4><ul><li><a href="/add-business/">Add Your Business</a></li><li><a href="/claim/">Claim Listing</a></li><li><a href="/pricing/">Advertising</a></li><li><a href="/pro/">Provider Dashboard</a></li><li><a href="/contact/">Contact Us</a></li><li><a href="/about/">About</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 RemoveJunkHawaii.com. All rights reserved.</span><div class="footer-bottom-links"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a></div></div></div></footer>
+    <div class="mobile-bar"><div class="mobile-bar-inner"><a href="/get-quotes/" class="btn btn-primary">Get Quotes</a><a href="tel:" class="btn btn-accent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a></div></div>
+
+    <script>
+    function filterIsland(island){var btns=document.querySelectorAll('.filter-btn');var sections=document.querySelectorAll('.island-section');btns.forEach(function(b){b.classList.remove('active')});event.target.classList.add('active');sections.forEach(function(s){if(island==='all'){s.classList.remove('hidden')}else{s.dataset.island===island?s.classList.remove('hidden'):s.classList.add('hidden')}})}
+    function toggleFaq(btn){var a=btn.nextElementSibling;btn.classList.toggle('open');a.classList.toggle('open')}
+    </script>
+</body>
+</html>
