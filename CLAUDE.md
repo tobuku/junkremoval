@@ -33,7 +33,7 @@ Every subpage follows this structure:
 
 ## Standard Header HTML
 ```html
-<header class="header"><div class="container header-inner"><a href="/" class="logo"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/><path d="M10 11v4"/><path d="M14 11v4"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><nav class="nav-desktop"><a href="/companies/">Companies</a><a href="/islands/">Islands</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/" class="btn-nav-cta">Get Quotes</a></nav><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.getElementById('mobileNav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div><nav class="nav-mobile" id="mobileNav"><a href="/companies/">Browse Companies</a><a href="/islands/">Browse by Island</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/tools/">Tools</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/get-quotes/">Get Free Quotes</a></nav></header>
+<header class="header"><div class="container header-inner"><a href="/" class="logo"><div class="logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16l-1.5 9.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 6z"/><path d="M2 4h20"/><path d="M10 11v4"/><path d="M14 11v4"/></svg></div><div class="logo-text">RemoveJunk<span>Hawaii</span></div></a><nav class="nav-desktop"><a href="/companies/">Companies</a><a href="/islands/">Islands</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/free-estimate/" class="btn-nav-cta">Free Estimate</a></nav><button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.getElementById('mobileNav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='false')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button></div><nav class="nav-mobile" id="mobileNav"><a href="/companies/">Browse Companies</a><a href="/islands/">Browse by Island</a><a href="/services/">Services</a><a href="/resources/">Resources</a><a href="/tools/">Tools</a><a href="/blog/">Blog</a><a href="/add-business/">List Your Business</a><a href="/free-estimate/">Schedule Free Estimate</a></nav></header>
 ```
 
 ## FAQ Toggle JS
@@ -41,14 +41,21 @@ Every subpage follows this structure:
 function toggleFaq(btn){var a=btn.nextElementSibling;btn.classList.toggle('open');a.classList.toggle('open')}
 ```
 
+## Business Model
+- **Onsite estimates ONLY** — no phone quotes, no photo-based quotes, no online instant quotes
+- Junk removal requires seeing the job in person (stairs, access, misleading photos, volume hard to judge remotely)
+- Primary CTA: "Schedule Free Estimate" → /free-estimate/
+- **Opala Kuleana (opalakuleana.com)** is the primary featured provider on every junk removal page
+- Featured provider block appears before the CTA band on all services, islands/city, and company pages
+
 ## Nav links
 - /companies/ — Company directory
 - /islands/ — Browse by island (Oahu, Maui, Kauai, Hawaii Island, Molokai, Lanai)
 - /services/ — 18 service categories
 - /resources/ — Transfer stations, recycling centers
-- /blog/ — (planned)
-- /add-business/ — (planned)
-- /get-quotes/ — (planned)
+- /blog/ — Blog (coming soon landing page)
+- /add-business/ — Business listing page
+- /free-estimate/ — Schedule free onsite estimate
 
 ## Site Structure
 ```
@@ -58,10 +65,15 @@ companies/index.html                # Company directory (by island)
 islands/index.html                  # Island browse page
 islands/{island}/index.html         # Per-island pages (6)
 islands/oahu/{city}/index.html      # Oahu city pages (20)
+islands/{island}/{city}/index.html  # Neighbor island city pages (30)
 services/index.html                 # Services browse page
 services/{service}/index.html       # Per-service pages (18)
+resources/index.html                # Resources hub page
 resources/transfer-stations/        # Transfer station directory
 resources/recycling/                # Recycling center directory
+free-estimate/index.html            # Free onsite estimate page
+blog/index.html                     # Blog (coming soon)
+add-business/index.html             # Business listing page
 outscraper-junkremoval.gs           # Google Apps Script for Outscraper API
 junkremoval-data.csv                # Scraped business data (310 rows, not committed)
 ```
