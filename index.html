@@ -1118,7 +1118,6 @@
                 <a href="/resources/">Resources</a>
                 <a href="/blog/">Blog</a>
                 <a href="/add-business/">List Your Business</a>
-                <a href="tel:+18085366075" class="btn-nav-cta">Call (808) 536-6075</a>
             </nav>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileNav()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -1152,34 +1151,12 @@
                         <div class="search-row">
                             <div class="search-field">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                                <input type="text" id="heroSearch" placeholder="What do you need removed?" aria-label="What do you need removed?">
+                                <input type="text" id="heroSearch" placeholder="Find junk removal company" aria-label="Find junk removal company">
                             </div>
                             <button class="btn-search" onclick="handleSearch()" aria-label="Search">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                                 Search
                             </button>
-                        </div>
-                        <div class="search-row-bottom">
-                            <div class="search-field">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                <select id="heroIsland" aria-label="Select island" onchange="updateCities()">
-                                    <option value="">Select Island</option>
-                                    <option value="oahu">Oahu</option>
-                                    <option value="maui">Maui</option>
-                                    <option value="kauai">Kauai</option>
-                                    <option value="hawaii-island">Hawaii Island</option>
-                                    <option value="molokai">Molokai</option>
-                                    <option value="lanai">Lanai</option>
-                                </select>
-                                <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-                            </div>
-                            <div class="search-field">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/></svg>
-                                <select id="heroCity" aria-label="Select city">
-                                    <option value="">Select City</option>
-                                </select>
-                                <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-                            </div>
                         </div>
                     </div>
 
@@ -1457,11 +1434,11 @@
                             </tr>
                             <tr>
                                 <td>Half truck load</td>
-                                <td>$350 &ndash; $550</td>
+                                <td>$400 &ndash; $600</td>
                             </tr>
                             <tr>
                                 <td>Full truck load</td>
-                                <td>$500 &ndash; $800</td>
+                                <td>$650 &ndash; $850</td>
                             </tr>
                             <tr>
                                 <td>Appliance removal</td>
@@ -1491,7 +1468,7 @@
                     <ul class="pricing-cta-features">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                            Free call at (808) 536-6075s, no obligation
+                            Free call at (808) 536-6075, no obligation
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
@@ -1794,46 +1771,9 @@
 
     <!-- ========== JAVASCRIPT ========== -->
     <script>
-        // City data for island-filtered dropdown
-        var cityData = {
-            'oahu': [
-                'Honolulu','Ewa Beach','Kapolei','Waipahu','Mililani','Pearl City',
-                'Aiea','Kaneohe','Kailua','Wahiawa','Waialua','Haleiwa','Makakilo',
-                'Hawaii Kai','Waimanalo','Kahuku','Laie','Hauula','Kaaawa',
-                'Nanakuli','Waianae'
-            ],
-            'maui': ['Kahului','Wailuku','Kihei','Lahaina','Paia','Makawao','Kula','Hana'],
-            'kauai': ['Lihue','Kapaa','Princeville','Hanalei','Koloa','Poipu','Waimea'],
-            'hawaii-island': ['Hilo','Kailua-Kona','Keaau','Pahoa','Waimea','Waikoloa','Ocean View'],
-            'molokai': ['Kaunakakai'],
-            'lanai': ['Lanai City']
-        };
-
-        function updateCities() {
-            var island = document.getElementById('heroIsland').value;
-            var citySelect = document.getElementById('heroCity');
-            citySelect.innerHTML = '<option value="">Select City</option>';
-            if (island && cityData[island]) {
-                cityData[island].forEach(function(city) {
-                    var opt = document.createElement('option');
-                    opt.value = city.toLowerCase().replace(/[\s]+/g, '-').replace(/[^a-z0-9-]/g, '');
-                    opt.textContent = city;
-                    citySelect.appendChild(opt);
-                });
-            }
-        }
-
         function handleSearch() {
             var query = document.getElementById('heroSearch').value.trim();
-            var island = document.getElementById('heroIsland').value;
-            var city = document.getElementById('heroCity').value;
-
-            // Build URL based on selections
-            if (island && city) {
-                window.location.href = '/islands/' + island + '/' + city + '/';
-            } else if (island) {
-                window.location.href = '/islands/' + island + '/';
-            } else if (query) {
+            if (query) {
                 window.location.href = '/companies/?q=' + encodeURIComponent(query);
             } else {
                 window.location.href = '/companies/';
