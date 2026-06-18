@@ -107,6 +107,14 @@ for city_data in "${CITIES[@]}"; do
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Service","name":"${svc_name} in ${city_name}, Oahu","description":"Professional ${svc_short,,} serving ${city_name} and surrounding Oahu neighborhoods.","provider":{"@type":"Organization","name":"Opala Kuleana","telephone":"(808) 536-6075","url":"https://opalakuleana.com"},"areaServed":{"@type":"City","name":"${city_name}","containedInPlace":{"@type":"AdministrativeArea","name":"Oahu, Hawaii"}},"serviceType":"${svc_name}"}
     </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J4M41S5XTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J4M41S5XTQ');
+</script>
 </head>
 <body>
     ${HEADER}
