@@ -1,0 +1,1092 @@
+[
+  {
+    "name": "1-800-GOT-JUNK? Honolulu",
+    "slug": "1-800-got-junk-honolulu",
+    "address": "821B Cedar St, Honolulu, HI 96814",
+    "island": "oahu",
+    "rating": "4.9",
+    "reviews": "4,695",
+    "phone": "8082041456",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Hawaii Junk Removal",
+    "slug": "hawaii-junk-removal",
+    "address": "1612 Homerule St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "1,635",
+    "phone": "8087730477",
+    "hours": "8AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Aloha Junk Man",
+    "slug": "aloha-junk-man",
+    "address": "905 Kalanianaole Hwy Unit 104A, Kailua, HI 96734",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "1,573",
+    "phone": "8089400809",
+    "hours": "8AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Kana\u2019i\u2019s Junk Removal",
+    "slug": "kana-i-s-junk-removal",
+    "address": "99-1295 Waiua Pl, Aiea, HI 96701",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "994",
+    "phone": "8085175772",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Island Junk Removal LLC",
+    "slug": "island-junk-removal-llc",
+    "address": "94-428 Kiau Pl, Waipahu, HI 96797",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "281",
+    "phone": "8083936328",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "JUNK AUTHORITY HAWAII",
+    "slug": "junk-authority-hawaii",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "278",
+    "phone": "8083451603",
+    "hours": "7AM\u20137PM Mon\u2013Sat"
+  },
+  {
+    "name": "ABC JUNKYARD",
+    "slug": "abc-junkyard",
+    "address": "794H Lehua Ave, Pearl City, HI 96782",
+    "island": "oahu",
+    "rating": "4.1",
+    "reviews": "264",
+    "phone": "8084568114",
+    "hours": "8AM\u20136PM daily"
+  },
+  {
+    "name": "HTM Contractors Inc",
+    "slug": "htm-contractors-inc",
+    "address": "160 Ahui St Ste B, Honolulu, HI 96813",
+    "island": "oahu",
+    "rating": "4.9",
+    "reviews": "230",
+    "phone": "8084563311",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Ma Rolloff",
+    "slug": "ma-rolloff",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "4.9",
+    "reviews": "219",
+    "phone": "8086886943",
+    "hours": "8AM\u20135PM Mon\u2013Fri, 9AM\u20135PM Sat, 8AM\u20135PM Sun"
+  },
+  {
+    "name": "HI End Services Junk Removal",
+    "slug": "hi-end-services-junk-removal",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "88",
+    "phone": "8089540903",
+    "hours": "6AM\u20136PM Mon\u2013Sat"
+  },
+  {
+    "name": "M. DYER GLOBAL",
+    "slug": "m-dyer-global",
+    "address": "98-054 Kuleana Rd, Pearl City, HI 96782",
+    "island": "oahu",
+    "rating": "4.4",
+    "reviews": "85",
+    "phone": "8084564200",
+    "hours": "7:30AM\u20134:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Junk Removal Oahu \u2013 Any Kine Junk LLC",
+    "slug": "junk-removal-oahu-any-kine-junk-llc",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "56",
+    "phone": "8088407026",
+    "hours": "8AM\u20135PM Mon\u2013Fri, 9AM\u20135PM Sat\u2013Sun"
+  },
+  {
+    "name": "West Oahu Aggregate",
+    "slug": "west-oahu-aggregate",
+    "address": "855 Umi St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "1.8",
+    "reviews": "51",
+    "phone": "8088477780",
+    "hours": "7AM\u20134PM Mon\u2013Sat"
+  },
+  {
+    "name": "Sharky\u2019s Dumpsters \u2013 Junk Removal and Hauling",
+    "slug": "sharky-s-dumpsters-junk-removal-and-hauling",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "41",
+    "phone": "8088651827",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Honolulu Disposal Service Inc",
+    "slug": "honolulu-disposal-service-inc",
+    "address": "1169 Mikole St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "2.7",
+    "reviews": "40",
+    "phone": "8088457581",
+    "hours": "6:30AM\u20135PM Mon\u2013Fri, 7AM\u20133:30PM Sat"
+  },
+  {
+    "name": "Nikko\u2019s Junk Removal",
+    "slug": "nikko-s-junk-removal",
+    "address": "Kolowaka Dr, Ewa Beach, HI 96706",
+    "island": "oahu",
+    "rating": "4.9",
+    "reviews": "37",
+    "phone": "4437647900",
+    "hours": "6AM\u20136PM Mon\u2013Sat, 9AM\u20135PM Sun"
+  },
+  {
+    "name": "Hawaiian Earth Recycling",
+    "slug": "hawaiian-earth-recycling",
+    "address": "65-1101 Wilikina Dr, Wahiawa, HI 96786",
+    "island": "oahu",
+    "rating": "4.7",
+    "reviews": "36",
+    "phone": "8086825895",
+    "hours": "7AM\u20134:30PM Mon\u2013Sat, 8AM\u201312PM Sun"
+  },
+  {
+    "name": "Elite Junk Removal LLC",
+    "slug": "elite-junk-removal-llc",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "28",
+    "phone": "8088001093",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Hawaii\u2019s Junk-A-Haulics LLC",
+    "slug": "hawaii-s-junk-a-haulics-llc",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "16",
+    "phone": "8087458225",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Father and Son\u2019s Construction LLC",
+    "slug": "father-and-son-s-construction-llc",
+    "address": "325 Thomas St, Wahiawa, HI 96786",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "15",
+    "phone": "8083758619",
+    "hours": "6AM\u20136PM Mon\u2013Fri, 7AM\u20135PM Sat"
+  },
+  {
+    "name": "Oahu Junk Removal",
+    "slug": "oahu-junk-removal",
+    "address": "98-1264 Akaaka St, Aiea, HI 96701",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "13",
+    "phone": "8087792972",
+    "hours": "7AM\u20139PM Mon\u2013Sat"
+  },
+  {
+    "name": "HIWASTE MFG.",
+    "slug": "hiwaste-mfg",
+    "address": "160-g Ahui St, Honolulu, HI 96813",
+    "island": "oahu",
+    "rating": "4.9",
+    "reviews": "12",
+    "phone": "8089099024",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Tajiri Demolition & Disposal LLC",
+    "slug": "tajiri-demolition-disposal-llc",
+    "address": "1005 Puuwai St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "4",
+    "reviews": "11",
+    "phone": "8088410217",
+    "hours": "7AM\u20134PM Mon\u2013Sat"
+  },
+  {
+    "name": "Kalaka Nui Inc.",
+    "slug": "kalaka-nui-inc",
+    "address": "91-558 Awakumoku St, Kapolei, HI 96707",
+    "island": "oahu",
+    "rating": "4.2",
+    "reviews": "11",
+    "phone": "8086822847",
+    "hours": "7AM\u20134PM Mon\u2013Sat"
+  },
+  {
+    "name": "Aloha Waste Systems of Honolulu Inc.",
+    "slug": "aloha-waste-systems-of-honolulu-inc",
+    "address": "91-265 Hanua St, Kapolei, HI 96707",
+    "island": "oahu",
+    "rating": "4.2",
+    "reviews": "10",
+    "phone": "8082378000",
+    "hours": "7AM\u20135PM Mon\u2013Fri, 7AM\u20132PM Sat"
+  },
+  {
+    "name": "HAWAII WORKS INC",
+    "slug": "hawaii-works-inc",
+    "address": "160-A Ahui St, Honolulu, HI 96813",
+    "island": "oahu",
+    "rating": "4.8",
+    "reviews": "10",
+    "phone": "8088477140",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "KK Hauling LLC",
+    "slug": "kk-hauling-llc",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "10",
+    "phone": "8085519937",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "JunkTrucks",
+    "slug": "junktrucks",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "9",
+    "phone": "8085519406",
+    "hours": "7AM\u20134PM daily"
+  },
+  {
+    "name": "Davis Equipment Hauling LLC",
+    "slug": "davis-equipment-hauling-llc",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "9",
+    "phone": "8083041661",
+    "hours": "7AM\u20133:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "OverIt Junk Removal",
+    "slug": "overit-junk-removal",
+    "address": "1415 Kinau St Unit A1, Honolulu, HI 96814",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "9",
+    "phone": "8084279939",
+    "hours": "7AM\u20137PM Mon\u2013Sat"
+  },
+  {
+    "name": "Oahu Dump Run",
+    "slug": "oahu-dump-run",
+    "address": "91-174 Olai St, Kapolei, HI 96707",
+    "island": "oahu",
+    "rating": "2.5",
+    "reviews": "8",
+    "phone": "8085565990",
+    "hours": "8AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Island Demo Inc",
+    "slug": "island-demo-inc",
+    "address": "2769 Kilihau St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "6",
+    "phone": "8088395522",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Pacific Junk Removal",
+    "slug": "pacific-junk-removal",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "4.3",
+    "reviews": "6",
+    "phone": "8088337171",
+    "hours": "8AM\u20134PM Mon\u2013Sat"
+  },
+  {
+    "name": "Oahu Junk Boys",
+    "slug": "oahu-junk-boys",
+    "address": "2394 Tantalus Dr, Honolulu, HI 96813",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "5",
+    "phone": "8084621482",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "WeCan Hawaii",
+    "slug": "wecan-hawaii",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "5",
+    "phone": "8083681219",
+    "hours": "7AM\u20138PM daily"
+  },
+  {
+    "name": "Unko\u2019s Junk Removal",
+    "slug": "unko-s-junk-removal",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "4",
+    "phone": "8087280736",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Island Construction & Demolition",
+    "slug": "island-construction-demolition",
+    "address": "85-443 Waianae Valley Rd # B, Waianae, HI 96792",
+    "island": "oahu",
+    "rating": "3",
+    "reviews": "2",
+    "phone": "8086968070",
+    "hours": ""
+  },
+  {
+    "name": "Ohana Environmental Construction",
+    "slug": "ohana-environmental-construction",
+    "address": "2968 Ualena St, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8088366955",
+    "hours": "8AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "13 Hauls",
+    "slug": "13-hauls",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8087747581",
+    "hours": "9AM\u20135PM daily"
+  },
+  {
+    "name": "Charles\u2019s Dumpster Rental Honolulu",
+    "slug": "charles-s-dumpster-rental-honolulu",
+    "address": "823 Krukowski Rd, Honolulu, HI 96819",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8086468041",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Hawaii Demolition Co.",
+    "slug": "hawaii-demolition-co",
+    "address": "55-568 Naniloa Loop #2b, Laie, HI 96762",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "808 Junk Removal & Bin Services",
+    "slug": "808-junk-removal-bin-services",
+    "address": "Hawaii",
+    "island": "oahu",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8082855105",
+    "hours": "8AM\u20138PM"
+  },
+  {
+    "name": "Koolau Refuse",
+    "slug": "koolau-refuse",
+    "address": "46-145 Malina Pl, Kaneohe, HI 96744",
+    "island": "oahu",
+    "rating": "",
+    "reviews": "",
+    "phone": "8082342349",
+    "hours": "7AM\u20134:30PM Mon\u2013Fri, 7AM\u20131PM Sat"
+  },
+  {
+    "name": "Island Hauling",
+    "slug": "island-hauling",
+    "address": "46-145 Malina Pl, Kaneohe, HI 96744",
+    "island": "oahu",
+    "rating": "",
+    "reviews": "",
+    "phone": "8082350215",
+    "hours": "7:30AM\u20133:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Malama Junk Removal",
+    "slug": "malama-junk-removal",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "121",
+    "phone": "8087079978",
+    "hours": "8AM\u20134PM Mon\u2013Sat"
+  },
+  {
+    "name": "Maui Industry Services",
+    "slug": "maui-industry-services",
+    "address": "964 Kahealani St, Haiku, HI 96708",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "69",
+    "phone": "8088687658",
+    "hours": "7AM\u20137:30PM daily"
+  },
+  {
+    "name": "Maui Junk Squad",
+    "slug": "maui-junk-squad",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "44",
+    "phone": "8083440774",
+    "hours": "8AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Haul Maui \u2013 Junk Removal Services",
+    "slug": "haul-maui-junk-removal-services",
+    "address": "513 Kuanana St, Paia, HI 96779",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "36",
+    "phone": "8088561214",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Pono Hauling",
+    "slug": "pono-hauling",
+    "address": "621 Maalo St, Wailuku, HI 96793",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "31",
+    "phone": "8083181632",
+    "hours": "7AM\u20136PM Mon\u2013Fri, Sun"
+  },
+  {
+    "name": "Pau Hana Hauling",
+    "slug": "pau-hana-hauling",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "27",
+    "phone": "8084308854",
+    "hours": "7AM\u20136PM daily"
+  },
+  {
+    "name": "MCS Junk Removal, Moving and Dumpster Rental",
+    "slug": "mcs-junk-removal-moving-and-dumpster-rental",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "20",
+    "phone": "8082985498",
+    "hours": "8AM\u20137PM daily"
+  },
+  {
+    "name": "TJ Gomes Trucking Co Inc",
+    "slug": "tj-gomes-trucking-co-inc",
+    "address": "500 B Waiale Rd, Wailuku, HI 96793",
+    "island": "maui",
+    "rating": "3.6",
+    "reviews": "18",
+    "phone": "8082440036",
+    "hours": "7AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Maui EKO Systems",
+    "slug": "maui-eko-systems",
+    "address": "Central Maui Landfill, Puunene, HI 96784",
+    "island": "maui",
+    "rating": "4.9",
+    "reviews": "16",
+    "phone": "8085728844",
+    "hours": "7AM\u20133PM Mon\u2013Fri"
+  },
+  {
+    "name": "Junk In Da Trunk Maui",
+    "slug": "junk-in-da-trunk-maui",
+    "address": "18 Olali St, Lahaina, HI 96761",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "15",
+    "phone": "8084983300",
+    "hours": "8AM\u20133PM daily"
+  },
+  {
+    "name": "JSX Hauling LLC",
+    "slug": "jsx-hauling-llc",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "14",
+    "phone": "8085834182",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Koa Hauls",
+    "slug": "koa-hauls",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "10",
+    "phone": "8082986888",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Rojac Trucking Inc",
+    "slug": "rojac-trucking-inc",
+    "address": "150 Pakana St, Wailuku, HI 96793",
+    "island": "maui",
+    "rating": "3.5",
+    "reviews": "8",
+    "phone": "8089861100",
+    "hours": "7AM\u20135PM Mon\u2013Fri, 7AM\u201312PM Sat"
+  },
+  {
+    "name": "B B Trucking & Storage",
+    "slug": "b-b-trucking-storage",
+    "address": "200 Waiehu Beach Rd, Wailuku, HI 96793",
+    "island": "maui",
+    "rating": "4.9",
+    "reviews": "8",
+    "phone": "8088773966",
+    "hours": "7AM\u20133PM Mon\u2013Fri"
+  },
+  {
+    "name": "Maui Disposal Co Inc",
+    "slug": "maui-disposal-co-inc",
+    "address": "300 Lalo St, Kahului, HI 96732",
+    "island": "maui",
+    "rating": "3.9",
+    "reviews": "7",
+    "phone": "8082427999",
+    "hours": "6AM\u20134:30PM Mon\u2013Fri, 7AM\u20133PM Sat"
+  },
+  {
+    "name": "Maui Junk and Lawn Solutions LLC",
+    "slug": "maui-junk-and-lawn-solutions-llc",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "7",
+    "phone": "8084422746",
+    "hours": "6AM\u20136PM daily"
+  },
+  {
+    "name": "RP Hauling & Transport",
+    "slug": "rp-hauling-transport",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "7",
+    "phone": "8082687836",
+    "hours": "5AM\u20137PM daily"
+  },
+  {
+    "name": "T. Sniffen & Sons LLC",
+    "slug": "t-sniffen-sons-llc",
+    "address": "124 Kuhuoi St, Kahului, HI 96732",
+    "island": "maui",
+    "rating": "4.3",
+    "reviews": "6",
+    "phone": "8088717781",
+    "hours": ""
+  },
+  {
+    "name": "Aloha Waste Systems Inc",
+    "slug": "aloha-waste-systems-inc",
+    "address": "301 Hansen Rd, Puunene, HI 96784",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "6",
+    "phone": "8088930932",
+    "hours": "8AM\u20134:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Waste Pro Hawaii LLC",
+    "slug": "waste-pro-hawaii-llc",
+    "address": "301 Hansen Rd, Puunene, HI 96784",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "5",
+    "phone": "8082498203",
+    "hours": "7AM\u20133PM Mon\u2013Fri"
+  },
+  {
+    "name": "Pacific Island Hauling Inc",
+    "slug": "pacific-island-hauling-inc",
+    "address": "16 Hobron Ave #204, Kahului, HI 96732",
+    "island": "maui",
+    "rating": "4.5",
+    "reviews": "4",
+    "phone": "8088701880",
+    "hours": ""
+  },
+  {
+    "name": "Maui Hauling Services",
+    "slug": "maui-hauling-services",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8087462861",
+    "hours": "8:30AM\u20134:30PM Mon\u2013Sat"
+  },
+  {
+    "name": "Maui Waste Systems",
+    "slug": "maui-waste-systems",
+    "address": "1043 Makawao Ave, Makawao, HI 96768",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8086337579",
+    "hours": "7:30AM\u20134:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Menehune Hauling LLC",
+    "slug": "menehune-hauling-llc",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8088660898",
+    "hours": "7AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Valley Isle Dump Runs and Cleaning Services",
+    "slug": "valley-isle-dump-runs-and-cleaning-services",
+    "address": "45 Kanani Rd, Kihei, HI 96753",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8084634305",
+    "hours": "7AM\u20133PM Mon\u2013Sat"
+  },
+  {
+    "name": "Country Trucking",
+    "slug": "country-trucking",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8088709658",
+    "hours": "7AM\u20137PM Mon\u2013Sat"
+  },
+  {
+    "name": "Ace Trucking LLC",
+    "slug": "ace-trucking-llc",
+    "address": "Hawaii",
+    "island": "maui",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8083447003",
+    "hours": "7AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "C & J Hauling Services Inc",
+    "slug": "c-j-hauling-services-inc",
+    "address": "Wailuku, HI 96793",
+    "island": "maui",
+    "rating": "",
+    "reviews": "",
+    "phone": "8088702345",
+    "hours": "9AM\u20136PM Mon\u2013Fri, 9AM\u20131PM Sat"
+  },
+  {
+    "name": "Westside Waste LLC",
+    "slug": "westside-waste-llc",
+    "address": "300 Lahainaluna Rd, Lahaina, HI 96761",
+    "island": "maui",
+    "rating": "",
+    "reviews": "",
+    "phone": "8088300144",
+    "hours": "8AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Roll Offs",
+    "slug": "roll-offs",
+    "address": "247 Hiwalani Loop, Makawao, HI 96768",
+    "island": "maui",
+    "rating": "",
+    "reviews": "",
+    "phone": "8082839342",
+    "hours": ""
+  },
+  {
+    "name": "Ohana Dump Runs Kauai",
+    "slug": "ohana-dump-runs-kauai",
+    "address": "3891 Omao Rd, Koloa, HI 96756",
+    "island": "kauai",
+    "rating": "5",
+    "reviews": "26",
+    "phone": "8083531973",
+    "hours": "8AM\u20135PM Tue\u2013Sat"
+  },
+  {
+    "name": "KAUAI JUNK GUY",
+    "slug": "kauai-junk-guy",
+    "address": "Hawaii",
+    "island": "kauai",
+    "rating": "5",
+    "reviews": "6",
+    "phone": "8086513188",
+    "hours": "9AM\u20134PM"
+  },
+  {
+    "name": "Garden Isle Disposal",
+    "slug": "garden-isle-disposal",
+    "address": "2666 Niumalu Rd, Lihue, HI 96766",
+    "island": "kauai",
+    "rating": "4.2",
+    "reviews": "5",
+    "phone": "8082452372",
+    "hours": "7AM\u20134:30PM Mon\u2013Fri, 8AM\u201312PM Sat"
+  },
+  {
+    "name": "Kauai Dump Runs",
+    "slug": "kauai-dump-runs",
+    "address": "4702 Mailihuna Rd, Kapaa, HI 96746",
+    "island": "kauai",
+    "rating": "4.2",
+    "reviews": "5",
+    "phone": "6197070612",
+    "hours": "8AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Kauai Veterans\u2019 Express Co LTD",
+    "slug": "kauai-veterans-express-co-ltd",
+    "address": "3-1480 Kaumualii Hwy, Lihue, HI 96766",
+    "island": "kauai",
+    "rating": "4.8",
+    "reviews": "4",
+    "phone": "8082453553",
+    "hours": "7AM\u20133PM Mon\u2013Fri"
+  },
+  {
+    "name": "Ritas Equipment Rental & Trash Disposal Inc",
+    "slug": "ritas-equipment-rental-trash-disposal-inc",
+    "address": "3020 Lauoho Rd, Kalaheo, HI 96741",
+    "island": "kauai",
+    "rating": "4",
+    "reviews": "4",
+    "phone": "8083328339",
+    "hours": "8AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Kahanu Trucking Service",
+    "slug": "kahanu-trucking-service",
+    "address": "4186 Waiahi St, Lihue, HI 96766",
+    "island": "kauai",
+    "rating": "4.7",
+    "reviews": "3",
+    "phone": "8083200193",
+    "hours": "8AM\u20136PM Mon\u2013Sat"
+  },
+  {
+    "name": "Kauai Trucking LLC",
+    "slug": "kauai-trucking-llc",
+    "address": "5338 Luana St, Kapaa, HI 96746",
+    "island": "kauai",
+    "rating": "5",
+    "reviews": "3",
+    "phone": "8086343867",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "Island Wide Junk Removal Specialist",
+    "slug": "island-wide-junk-removal-specialist",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "185",
+    "phone": "8084617004",
+    "hours": "Open 24 hours"
+  },
+  {
+    "name": "JM Hauling & Junk Disposal LLC",
+    "slug": "jm-hauling-junk-disposal-llc",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "161",
+    "phone": "8089607189",
+    "hours": "9AM\u20135:30PM Mon\u2013Sat"
+  },
+  {
+    "name": "Hawaii Island Waste \u2013 Junk Removal & Dumpster Rental",
+    "slug": "hawaii-island-waste-junk-removal-dumpster-rental",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "115",
+    "phone": "8083009766",
+    "hours": "6AM\u20138PM daily"
+  },
+  {
+    "name": "Kamuela Roll Offs",
+    "slug": "kamuela-roll-offs",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "84",
+    "phone": "8088966817",
+    "hours": "7:30AM\u20136PM Mon\u2013Sat"
+  },
+  {
+    "name": "Kona Junk Removal and Hauling",
+    "slug": "kona-junk-removal-and-hauling",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "74",
+    "phone": "8084949167",
+    "hours": "7AM\u20139PM daily"
+  },
+  {
+    "name": "PFI Rubbish Service Inc",
+    "slug": "pfi-rubbish-service-inc",
+    "address": "74-5598 Alapa St, Kailua-Kona, HI 96740",
+    "island": "hawaii-island",
+    "rating": "3.9",
+    "reviews": "18",
+    "phone": "8083293440",
+    "hours": "8AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "EZ Pickups Hawaii LLC",
+    "slug": "ez-pickups-hawaii-llc",
+    "address": "1205 Komohana St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "17",
+    "phone": "8086646362",
+    "hours": "8AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Leo\u2019s Rubbish Service",
+    "slug": "leo-s-rubbish-service",
+    "address": "456 Kekuanaoa St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "4.6",
+    "reviews": "14",
+    "phone": "8089355850",
+    "hours": "7AM\u20133:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Malama Trash Services",
+    "slug": "malama-trash-services",
+    "address": "47 Awapuhi St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "14",
+    "phone": "8087699929",
+    "hours": "6AM\u20136PM daily"
+  },
+  {
+    "name": "Bj\u2019s Excavation & Hauling",
+    "slug": "bj-s-excavation-hauling",
+    "address": "73-5563 Olowalu St Suite B 203, Kailua-Kona, HI 96740",
+    "island": "hawaii-island",
+    "rating": "4.6",
+    "reviews": "9",
+    "phone": "8083318120",
+    "hours": "8AM\u20134PM Mon\u2013Thu, 9AM\u20133PM Fri"
+  },
+  {
+    "name": "We Can Too LLC",
+    "slug": "we-can-too-llc",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "7",
+    "phone": "8089601374",
+    "hours": "7AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "West Hawaii Yard Care & Hauling",
+    "slug": "west-hawaii-yard-care-hauling",
+    "address": "75-5981 Kuakini Hwy APT 1, Kailua-Kona, HI 96740",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "5",
+    "phone": "8088953281",
+    "hours": "7AM\u20135PM daily"
+  },
+  {
+    "name": "Junk Yard Dogs \u2013 Hilo & Kona",
+    "slug": "junk-yard-dogs-hilo-kona",
+    "address": "73-4128 Hulikoa Dr, Kailua-Kona, HI 96740",
+    "island": "hawaii-island",
+    "rating": "4",
+    "reviews": "4",
+    "phone": "8083244869",
+    "hours": ""
+  },
+  {
+    "name": "Island Rock Slingers & Hauling",
+    "slug": "island-rock-slingers-hauling",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "4",
+    "phone": "8087311332",
+    "hours": "6AM\u20136PM Mon\u2013Fri"
+  },
+  {
+    "name": "Frankies Rubbish Service LLC",
+    "slug": "frankies-rubbish-service-llc",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "4",
+    "phone": "8089385319",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Pacific Waste",
+    "slug": "pacific-waste",
+    "address": "Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "3",
+    "reviews": "4",
+    "phone": "8083264911",
+    "hours": "9AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Opala Be Gone LLC",
+    "slug": "opala-be-gone-llc",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "3",
+    "phone": "8083331747",
+    "hours": "7AM\u20134PM Mon\u2013Fri"
+  },
+  {
+    "name": "Kona Hauling and Delivery Service",
+    "slug": "kona-hauling-and-delivery-service",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "2",
+    "phone": "8087472400",
+    "hours": "7AM\u20135PM Mon\u2013Sat"
+  },
+  {
+    "name": "Big Island Disposal Service",
+    "slug": "big-island-disposal-service",
+    "address": "1300 Kekuanaoa St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8086402724",
+    "hours": "7:30AM\u20134:30PM Mon\u2013Sat"
+  },
+  {
+    "name": "Mamalahoa Dumpster Rental Waimea",
+    "slug": "mamalahoa-dumpster-rental-waimea",
+    "address": "67-1185 Mamalahoa Hwy, Waimea, HI 96743",
+    "island": "hawaii-island",
+    "rating": "5",
+    "reviews": "1",
+    "phone": "8086465426",
+    "hours": "7AM\u20139PM daily"
+  },
+  {
+    "name": "S & J\u2019s Hauling",
+    "slug": "s-j-s-hauling",
+    "address": "Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "1",
+    "reviews": "1",
+    "phone": "8089597902",
+    "hours": ""
+  },
+  {
+    "name": "Yessah Dumpstah",
+    "slug": "yessah-dumpstah",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "",
+    "reviews": "",
+    "phone": "8087474221",
+    "hours": "7AM\u20133:30PM Mon\u2013Fri"
+  },
+  {
+    "name": "Orchid Isle Hauling & Rental",
+    "slug": "orchid-isle-hauling-rental",
+    "address": "499 Kulana Kea Dr, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "",
+    "reviews": "",
+    "phone": "8089613360",
+    "hours": "9AM\u20135PM Mon\u2013Fri"
+  },
+  {
+    "name": "Aloha Junk Removal",
+    "slug": "aloha-junk-removal",
+    "address": "851 Leilani St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "",
+    "reviews": "",
+    "phone": "8089350867",
+    "hours": ""
+  },
+  {
+    "name": "Ed\u2019s Hauling & Rental Inc",
+    "slug": "ed-s-hauling-rental-inc",
+    "address": "304 Punahele St, Hilo, HI 96720",
+    "island": "hawaii-island",
+    "rating": "",
+    "reviews": "",
+    "phone": "8089357988",
+    "hours": ""
+  },
+  {
+    "name": "Killah Cleanouts",
+    "slug": "killah-cleanouts",
+    "address": "Hawaii",
+    "island": "hawaii-island",
+    "rating": "",
+    "reviews": "",
+    "phone": "8082218675",
+    "hours": ""
+  },
+  {
+    "name": "Makoa Trucking & Services Inc",
+    "slug": "makoa-trucking-services-inc",
+    "address": "70 Kaunakakai Pl, Kaunakakai, HI 96748",
+    "island": "molokai",
+    "rating": "5",
+    "reviews": "8",
+    "phone": "8085535319",
+    "hours": "6AM\u20136PM Mon\u2013Sat"
+  }
+]
