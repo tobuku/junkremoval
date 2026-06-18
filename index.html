@@ -230,6 +230,15 @@
                 radial-gradient(ellipse at 80% 20%, rgba(6,182,212,0.1) 0%, transparent 50%);
             pointer-events: none;
         }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('/images/hawaiian-islands.jpg') center center / contain no-repeat;
+            opacity: 0.08;
+            pointer-events: none;
+            filter: brightness(2) contrast(0.5);
+        }
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -526,12 +535,12 @@
             transition: transform 0.4s ease;
         }
         .island-card:hover .island-card-bg { transform: scale(1.05); }
-        .island-card-bg-oahu { background: linear-gradient(135deg, #0c4a6e, #0e7490); }
-        .island-card-bg-maui { background: linear-gradient(135deg, #065f46, #047857); }
-        .island-card-bg-kauai { background: linear-gradient(135deg, #1e3a5f, #2563eb); }
-        .island-card-bg-bigisland { background: linear-gradient(135deg, #7c2d12, #b45309); }
-        .island-card-bg-molokai { background: linear-gradient(135deg, #4a1d6e, #7c3aed); }
-        .island-card-bg-lanai { background: linear-gradient(135deg, #713f12, #a16207); }
+        .island-card-bg-oahu { background: linear-gradient(135deg, rgba(12,74,110,0.7), rgba(14,116,144,0.7)), url('/images/oahu.jpg') center/cover; }
+        .island-card-bg-maui { background: linear-gradient(135deg, rgba(6,95,70,0.7), rgba(4,120,87,0.7)), url('/images/maui.jpg') center/cover; }
+        .island-card-bg-kauai { background: linear-gradient(135deg, rgba(30,58,95,0.7), rgba(37,99,235,0.7)), url('/images/kauai.jpg') center/cover; }
+        .island-card-bg-bigisland { background: linear-gradient(135deg, rgba(124,45,18,0.7), rgba(180,83,9,0.7)), url('/images/hawaii.jpg') center/cover; }
+        .island-card-bg-molokai { background: linear-gradient(135deg, rgba(74,29,110,0.7), rgba(124,58,237,0.7)), url('/images/molokai.jpg') center/cover; }
+        .island-card-bg-lanai { background: linear-gradient(135deg, rgba(113,63,18,0.7), rgba(161,98,7,0.7)), url('/images/lanai.jpg') center/cover; }
         .island-card-content { position: relative; z-index: 2; }
         .island-card h3 { font-size: 1.4rem; margin-bottom: 4px; }
         .island-card-meta {
