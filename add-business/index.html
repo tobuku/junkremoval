@@ -113,19 +113,56 @@
                 <p class="section-sub">The process is simple. We verify all listings before publishing.</p>
             </div>
             <div class="content-block">
-                <p>To add or claim your business listing, email us with the following information:</p>
-                <ul>
-                    <li>Business name</li>
-                    <li>Physical address (or general area if mobile-only)</li>
-                    <li>Phone number</li>
-                    <li>Website URL (if any)</li>
-                    <li>Islands and cities you serve</li>
-                    <li>Service categories you offer</li>
-                    <li>Hours of operation</li>
-                </ul>
-                <p>Send your details to <strong>[contact@removejunkhawaii.com]</strong> — placeholder address, to be updated. We review all submissions, verify the business is operating, and add it to the appropriate pages within a few business days.</p>
-                <p>If your business is already in the directory and you need to update information, use the same email and include your current listing URL.</p>
+                <p>Fill out the form below and we'll get your business added to the directory. We review all submissions, verify the business is operating, and add it to the appropriate pages within a few business days.</p>
+                <p>If your business is already in the directory and you need to update information, submit the form and include your current listing URL in the message.</p>
             </div>
+            <form action="https://formspree.io/f/mwvdyyrb" method="POST" style="max-width:640px;margin:2rem auto 0;display:flex;flex-direction:column;gap:1rem">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                    <div>
+                        <label for="business-name" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Business Name *</label>
+                        <input type="text" id="business-name" name="business_name" required style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                    </div>
+                    <div>
+                        <label for="contact-name" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Contact Name *</label>
+                        <input type="text" id="contact-name" name="contact_name" required style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                    </div>
+                </div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                    <div>
+                        <label for="email" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Email *</label>
+                        <input type="email" id="email" name="email" required style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                    </div>
+                    <div>
+                        <label for="phone" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                    </div>
+                </div>
+                <div>
+                    <label for="address" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Business Address (or general area if mobile-only)</label>
+                    <input type="text" id="address" name="address" style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                </div>
+                <div>
+                    <label for="website" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Website URL</label>
+                    <input type="url" id="website" name="website" style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                </div>
+                <div>
+                    <label for="islands" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Islands &amp; Cities Served *</label>
+                    <input type="text" id="islands" name="islands_served" required placeholder="e.g. Oahu — Honolulu, Kailua, Kapolei" style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                </div>
+                <div>
+                    <label for="services" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Services Offered</label>
+                    <input type="text" id="services" name="services" placeholder="e.g. Junk removal, furniture removal, estate cleanouts" style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                </div>
+                <div>
+                    <label for="hours" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Hours of Operation</label>
+                    <input type="text" id="hours" name="hours" placeholder="e.g. Mon–Sat 7AM–5PM" style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body)">
+                </div>
+                <div>
+                    <label for="message" style="display:block;font-weight:600;font-size:.88rem;color:var(--color-slate-700);margin-bottom:6px">Additional Info</label>
+                    <textarea id="message" name="message" rows="3" placeholder="Anything else we should know — existing listing URL, special services, etc." style="width:100%;padding:12px 14px;border:1px solid var(--color-slate-300);border-radius:var(--radius-md);font-size:.95rem;font-family:var(--font-body);resize:vertical"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" style="align-self:flex-start;padding:14px 36px">Submit Your Business</button>
+            </form>
         </div>
     </section>
 
@@ -136,6 +173,9 @@
                 <h2 class="section-title">Opala Kuleana — An Example of What a Featured Listing Looks Like</h2>
             </div>
             <div class="content-block">
+                <div style="margin-bottom:1.5rem;border-radius:var(--radius-lg);overflow:hidden;max-width:500px">
+                    <img src="/images/opala-kuleana-junk-removal.jpeg" alt="Opala Kuleana junk removal truck" style="width:100%;height:auto;display:block" loading="lazy">
+                </div>
                 <p><strong>Opala Kuleana</strong> is Hawaii's featured junk removal provider on RemoveJunkHawaii.com. Their listing appears prominently across island, city, and service pages statewide — showing how a featured placement works in practice.</p>
                 <p>Opala Kuleana serves communities across multiple Hawaiian Islands, handling everything from single-item pickups to full estate cleanouts. Their featured status on this directory gives them top placement in relevant search results and maximum visibility to customers looking for junk removal in Hawaii.</p>
                 <p>Visit <a href="https://opalakuleana.com" target="_blank" rel="noopener">opalakuleana.com</a> to see their full service offering, or contact us to learn about featured placement for your business.</p>
