@@ -92,12 +92,12 @@
         .island-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-xl);color:var(--color-white)}
         .island-card-bg{position:absolute;inset:0;transition:transform 0.4s ease}
         .island-card:hover .island-card-bg{transform:scale(1.05)}
-        .bg-oahu{background:linear-gradient(135deg,#0c4a6e,#0e7490)}
-        .bg-maui{background:linear-gradient(135deg,#065f46,#047857)}
-        .bg-kauai{background:linear-gradient(135deg,#1e3a5f,#2563eb)}
-        .bg-bigisland{background:linear-gradient(135deg,#7c2d12,#b45309)}
-        .bg-molokai{background:linear-gradient(135deg,#4a1d6e,#7c3aed)}
-        .bg-lanai{background:linear-gradient(135deg,#713f12,#a16207)}
+        .island-card-bg-oahu{background:linear-gradient(135deg,rgba(12,74,110,0.7),rgba(14,116,144,0.7)),url('/images/oahu.jpg') center/cover}
+        .island-card-bg-maui{background:linear-gradient(135deg,rgba(6,95,70,0.7),rgba(4,120,87,0.7)),url('/images/maui.jpg') center/cover}
+        .island-card-bg-kauai{background:linear-gradient(135deg,rgba(30,58,95,0.7),rgba(37,99,235,0.7)),url('/images/kauai.jpg') center/cover}
+        .island-card-bg-bigisland{background:linear-gradient(135deg,rgba(124,45,18,0.7),rgba(180,83,9,0.7)),url('/images/hawaii.jpg') center/cover}
+        .island-card-bg-molokai{background:linear-gradient(135deg,rgba(74,29,110,0.7),rgba(124,58,237,0.7)),url('/images/molokai.jpg') center/cover}
+        .island-card-bg-lanai{background:linear-gradient(135deg,rgba(113,63,18,0.7),rgba(161,98,7,0.7)),url('/images/lanai.jpg') center/cover}
         .island-card-content{position:relative;z-index:2}
         .island-card h2{font-size:1.8rem;margin-bottom:6px}
         .island-card-county{font-size:.85rem;opacity:0.7;margin-bottom:12px}
@@ -193,7 +193,7 @@
         <div class="container">
             <div class="islands-grid">
                 <a href="/islands/oahu/" class="island-card primary">
-                    <div class="island-card-bg bg-oahu"></div>
+                    <div class="island-card-bg island-card-bg-oahu"></div>
                     <div class="island-card-content">
                         <h2>Oahu</h2>
                         <div class="island-card-county">City and County of Honolulu</div>
@@ -205,7 +205,7 @@
                     </div>
                 </a>
                 <a href="/islands/maui/" class="island-card">
-                    <div class="island-card-bg bg-maui"></div>
+                    <div class="island-card-bg island-card-bg-maui"></div>
                     <div class="island-card-content">
                         <h2>Maui</h2>
                         <div class="island-card-county">Maui County</div>
@@ -217,7 +217,7 @@
                     </div>
                 </a>
                 <a href="/islands/hawaii-island/" class="island-card">
-                    <div class="island-card-bg bg-bigisland"></div>
+                    <div class="island-card-bg island-card-bg-bigisland"></div>
                     <div class="island-card-content">
                         <h2>Hawaii Island</h2>
                         <div class="island-card-county">Hawaii County</div>
@@ -229,7 +229,7 @@
                     </div>
                 </a>
                 <a href="/islands/kauai/" class="island-card">
-                    <div class="island-card-bg bg-kauai"></div>
+                    <div class="island-card-bg island-card-bg-kauai"></div>
                     <div class="island-card-content">
                         <h2>Kauai</h2>
                         <div class="island-card-county">Kauai County</div>
@@ -241,7 +241,7 @@
                     </div>
                 </a>
                 <a href="/islands/molokai/" class="island-card">
-                    <div class="island-card-bg bg-molokai"></div>
+                    <div class="island-card-bg island-card-bg-molokai"></div>
                     <div class="island-card-content">
                         <h2>Molokai</h2>
                         <div class="island-card-county">Maui County</div>
@@ -253,7 +253,7 @@
                     </div>
                 </a>
                 <a href="/islands/lanai/" class="island-card">
-                    <div class="island-card-bg bg-lanai"></div>
+                    <div class="island-card-bg island-card-bg-lanai"></div>
                     <div class="island-card-content">
                         <h2>Lanai</h2>
                         <div class="island-card-county">Maui County</div>
