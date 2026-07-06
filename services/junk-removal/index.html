@@ -20,6 +20,15 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What items can junk removal companies in Hawaii take?","acceptedAnswer":{"@type":"Answer","text":"Most Hawaii junk removal companies accept furniture, appliances, electronics, yard waste, construction debris, mattresses, clothing, and general household items. Hazardous materials such as paint, chemicals, propane tanks, and asbestos are typically excluded and require special disposal through county hazmat programs."}},{"@type":"Question","name":"Is same-day junk removal available in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"Yes, many providers on Oahu, Maui, and Hawaii Island offer same-day or next-day service depending on their schedule and your location. Neighbor islands with fewer providers may require 1–3 days advance booking."}},{"@type":"Question","name":"How is junk removal priced in Hawaii?","acceptedAnswer":{"@type":"Answer","text":"Most Hawaii junk removal companies price by volume — how much space your items take up in the truck. Expect to pay $75–$150 for a single item, $200–$400 for a partial load, $400–$800 for a full truck load, and $800 or more for multiple loads. Island shipping costs and higher disposal fees at Hawaii transfer stations typically make prices 15–30% higher than mainland rates."}},{"@type":"Question","name":"Do junk removal companies recycle or donate items?","acceptedAnswer":{"@type":"Answer","text":"Most reputable Hawaii junk haulers sort loads and divert usable items to thrift stores like Goodwill, Aloha United Way partners, and local donation centers before sending the rest to the transfer station. Ask your provider about their diversion practices."}},{"@type":"Question","name":"Are junk removal companies in Hawaii licensed and insured?","acceptedAnswer":{"@type":"Answer","text":"Licensed junk removal operators in Hawaii should hold a valid State of Hawaii contractor or hauler license and carry general liability insurance. Always ask for proof of insurance before allowing a crew onto your property."}}]}
     </script>
+    <style>
+        .city-map-card{display:block;background:var(--color-white);border:1px solid var(--color-slate-200);border-radius:var(--radius-lg);overflow:hidden;text-decoration:none;color:inherit;transition:all var(--transition)}
+        .city-map-card:hover{border-color:var(--color-ocean-light);box-shadow:var(--shadow-lg);transform:translateY(-3px);color:inherit}
+        .city-map-wrap{position:relative;height:160px;overflow:hidden;pointer-events:none}
+        .city-map-wrap iframe{width:100%;height:100%;border:0}
+        .city-map-info{padding:14px 18px}
+        .city-map-info .city-card-name{font-family:var(--font-heading);font-weight:700;font-size:1rem;color:var(--color-slate-900)}
+        .city-map-info .city-card-island{font-size:.82rem;color:var(--color-slate-500);margin-top:2px}
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4M41S5XTQ"></script>
 <script>
@@ -87,15 +96,42 @@
         <div class="container">
             <div class="section-header"><div class="section-label">Top Locations</div><h2 class="section-title">Popular Cities for Junk Removal</h2></div>
             <div class="grid-3">
-                <a href="/cities/honolulu/" class="city-card"><div class="city-card-info"><div class="city-card-name">Honolulu</div><div class="city-card-island">Oahu</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/kailua/" class="city-card"><div class="city-card-info"><div class="city-card-name">Kailua</div><div class="city-card-island">Oahu</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/kahului/" class="city-card"><div class="city-card-info"><div class="city-card-name">Kahului</div><div class="city-card-island">Maui</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/kailua-kona/" class="city-card"><div class="city-card-info"><div class="city-card-name">Kailua-Kona</div><div class="city-card-island">Hawaii Island</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/hilo/" class="city-card"><div class="city-card-info"><div class="city-card-name">Hilo</div><div class="city-card-island">Hawaii Island</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/lihue/" class="city-card"><div class="city-card-info"><div class="city-card-name">Lihue</div><div class="city-card-island">Kauai</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/pearl-city/" class="city-card"><div class="city-card-info"><div class="city-card-name">Pearl City</div><div class="city-card-island">Oahu</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/waipahu/" class="city-card"><div class="city-card-info"><div class="city-card-name">Waipahu</div><div class="city-card-island">Oahu</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
-                <a href="/cities/wailuku/" class="city-card"><div class="city-card-info"><div class="city-card-name">Wailuku</div><div class="city-card-island">Maui</div></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+                <a href="/cities/honolulu/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Honolulu,Hawaii&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Honolulu, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Honolulu</div><div class="city-card-island">Oahu</div></div>
+                </a>
+                <a href="/cities/kailua/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Kailua,Oahu,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Kailua, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Kailua</div><div class="city-card-island">Oahu</div></div>
+                </a>
+                <a href="/cities/kahului/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Kahului,Maui,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Kahului, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Kahului</div><div class="city-card-island">Maui</div></div>
+                </a>
+                <a href="/cities/kailua-kona/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Kailua-Kona,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Kailua-Kona, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Kailua-Kona</div><div class="city-card-island">Hawaii Island</div></div>
+                </a>
+                <a href="/cities/hilo/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Hilo,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Hilo, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Hilo</div><div class="city-card-island">Hawaii Island</div></div>
+                </a>
+                <a href="/cities/lihue/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Lihue,Kauai,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Lihue, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Lihue</div><div class="city-card-island">Kauai</div></div>
+                </a>
+                <a href="/cities/pearl-city/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Pearl+City,Oahu,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Pearl City, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Pearl City</div><div class="city-card-island">Oahu</div></div>
+                </a>
+                <a href="/cities/waipahu/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Waipahu,Oahu,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Waipahu, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Waipahu</div><div class="city-card-island">Oahu</div></div>
+                </a>
+                <a href="/cities/wailuku/" class="city-map-card">
+                    <div class="city-map-wrap"><iframe src="https://www.google.com/maps?q=Wailuku,Maui,Hawaii&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Wailuku, Hawaii"></iframe></div>
+                    <div class="city-map-info"><div class="city-card-name">Wailuku</div><div class="city-card-island">Maui</div></div>
+                </a>
             </div>
         </div>
     </section>
